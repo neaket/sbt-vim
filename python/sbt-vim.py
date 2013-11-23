@@ -26,7 +26,7 @@ class SBT(object):
     self.buffer = None
     self.test_buffer = None
     self.proc = subprocess.Popen(
-        ["sbt", "-Dsbt.log.noformat=true"],
+        ["./sbt", "-Dsbt.log.noformat=true"],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         close_fds=True)
